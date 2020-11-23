@@ -5,6 +5,7 @@ public class Director extends Manager {
 
     private double budget;
 
+
     public Director(String name, String nationalInsuranceNumber, double salary, String deptName, double budget){
         super(name, nationalInsuranceNumber, salary, deptName);
         this.budget = budget;
@@ -12,5 +13,9 @@ public class Director extends Manager {
 
     public double getBudget(){
         return this.budget;
+    }
+
+    public double payBonus(){
+        return this.getSalary() * 0.02;
     }
 }
